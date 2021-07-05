@@ -5,10 +5,20 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-postcss",
+    "gatsby-plugin-postcss",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        queryLimit: 1000, // Defaults to 100
+        collectionTypes: [],
+        singleTypes: [`home-page`, `menu-bar`],
+      },
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {

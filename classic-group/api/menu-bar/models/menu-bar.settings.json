@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "menu_bars",
+  "info": {
+    "name": "MenuBar",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "item01": {
+      "type": "string"
+    },
+    "item02": {
+      "type": "string"
+    },
+    "item03": {
+      "type": "string"
+    },
+    "item04": {
+      "type": "string"
+    },
+    "item05": {
+      "type": "string"
+    }
+  }
+}
